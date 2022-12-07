@@ -9,8 +9,8 @@ void main() {
 //------------------------------------------
 //------------------------------------------
 //------------------------------------------
-List<String> Harfler = <String>['A', 'B', 'C'];
-List<int> renkKodlari = <int>[600, 500, 100];
+List<String> Harfler = <String>['A', 'B', 'C', 'D', 'E', 'F'];
+List<int> renkKodlari = <int>[600, 500, 400, 300, 200, 100];
 //------------------------------------------
 //------------------------------------------
 //------------------------------------------
@@ -57,7 +57,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: MediaQuery.of(context).size.width - 50,
                 height: MediaQuery.of(context).size.height - 100,
                 child: ListView.builder(
-                    padding: const EdgeInsets.all(8),
                     itemCount: Harfler.length,
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
