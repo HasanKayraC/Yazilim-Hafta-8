@@ -53,19 +53,17 @@ class _MyHomePageState extends State<MyHomePage> {
             //------------------------------------------
             //------------------------------------------
             //------------------------------------------
-            Container(
-                width: MediaQuery.of(context).size.width - 50,
-                height: MediaQuery.of(context).size.height - 100,
-                child: ListView.builder(
-                    padding: const EdgeInsets.all(8),
-                    itemCount: Harfler.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Container(
-                        height: 50,
-                        color: Colors.amber[renkKodlari[index]],
-                        child: Center(child: Text("Harf:" + Harfler[index])),
-                      );
-                    })),
+
+            ListView.builder(
+                padding: const EdgeInsets.all(8),
+                itemCount: Harfler.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Container(
+                    height: 50,
+                    color: Colors.amber[renkKodlari[index]],
+                    child: Center(child: Text("Harf:" + Harfler[index])),
+                  );
+                })
             //------------------------------------------
             //------------------------------------------
             //------------------------------------------
